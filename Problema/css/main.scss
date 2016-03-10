@@ -1,0 +1,81 @@
+.navbar {
+    background-color: white;
+    color: #7D7D7D;
+    .navbar-brand {
+        & img {
+            width: 6em;
+        }
+    }
+}
+#banner {
+    background-image: url("../images/1920x665-1.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 450px;
+    margin-top: 30px;
+    .opaco {
+        width: 100%;
+        height: 450px;
+        background-color: black;
+        opacity: 0.6;
+    }
+    .text_banner {
+        color: white;
+        text-align: left;
+        padding: 70px;
+    }
+}
+button {
+    border-radius: 25px;
+    padding: 5px 15px;
+    border: 1px solid #3CB1F7;
+    background-color: #3CB1F7;
+}
+.suscrib {
+    @extend button;
+    background-color: transparent;
+    color: #3cb1f7;
+}
+.articulo {
+    background-color: white;
+    box-shadow: -1px 0 1px 0 #7D7D7D;
+    padding: 70px 70px 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    img {
+        padding: 30px;
+        width: 100%;
+    }
+    .title {
+        text-align: center;
+    }
+}
+.articulo2 {
+    & .row {
+        & h5 {
+            font-weight: bold;
+        }
+        & p {
+            padding-right: 60px;
+        }
+    }
+    @extend .articulo;
+    box-shadow: -1px 0 0 0 #7D7D7D;
+    background-color: #F6F6F6;
+}
+footer {
+    padding: 40px;
+    @extend .articulo;
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+    box-shadow: -1px 0 0 0 #7D7D7D;
+    i {
+        padding: 10px;
+        border: 1px solid #3CB1F7;
+        color: #3CB1F7;
+    }
+}
+span {
+    color: #3cb1f7;
+}
