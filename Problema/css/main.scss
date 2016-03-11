@@ -1,6 +1,8 @@
+
 .navbar {
     background-color: white;
     color: #7D7D7D;
+    border:none;
     .navbar-brand {
         & img {
             width: 6em;
@@ -8,7 +10,7 @@
     }
 }
 #banner {
-    background-image: url("../images/1920x665-1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../images/1920x665-1.jpg);
     background-size: cover;
     background-position: top;
     height: 450px;
@@ -16,18 +18,19 @@
     .opaco {
         width: 100%;
         height: 450px;
-        background-color: black;
-        opacity: 0.6;
+        
+        
     }
     .text_banner {
         color: white;
         text-align: left;
-        padding: 70px;
+        padding: 90px;
+        line-height: 13px;
     }
 }
 button {
     border-radius: 25px;
-    padding: 5px 15px;
+    padding: 10px 20px;
     border: 1px solid #3CB1F7;
     background-color: #3CB1F7;
 }
@@ -78,4 +81,15 @@ footer {
 }
 span {
     color: #3cb1f7;
+}
+
+@media (max-width: 767px) {
+    #banner .text_banner{
+        padding:0px;
+    }
+    .articulo{
+        padding:0px;
+    }
+
+
 }
